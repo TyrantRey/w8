@@ -1,0 +1,21 @@
+# ARCHITECTURE.md
+
+- 前端用 index.html + app.js + style.css
+- 後端 FastAPI
+- SQLite 四張表：sessions/messages/preferences/files
+- Gemini API 呼叫
+- 外部工具可做「天氣查詢」或「Wikipedia 摘要查詢」
+- /api/chat
+  - 流程：
+  - 接收 session_id, message, attachment
+  - 寫入 user message
+  - 讀取 preference + 最近歷史
+  - 若偵測工具關鍵字，先調用工具 API
+  - 組 prompt 呼叫 Gemini
+  - 寫入 assistant message
+  - 回傳結果
+- stop response：
+  - 可用全域 session flag 設計
+  - 每個 session 有一個 stop_requested 狀態
+- regenerate：
+  - 取最後一個 user message，重新產生 assistant 訊息
