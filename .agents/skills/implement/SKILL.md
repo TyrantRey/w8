@@ -8,6 +8,7 @@ description: Implement the full-stack AI chatbot using HTML frontend, FastAPI ba
 你的任務是直接實作本專案程式碼。
 
 ## 技術要求（必須遵守）
+
 - 前端：HTML + CSS + JavaScript
 - 後端：FastAPI
 - 資料庫：SQLite
@@ -17,6 +18,7 @@ description: Implement the full-stack AI chatbot using HTML frontend, FastAPI ba
 - 專案進入點：`app.py`
 
 ## 必做功能
+
 1. 多聊天室 session 管理
 2. 訊息資料結構包含：
    - role
@@ -31,6 +33,7 @@ description: Implement the full-stack AI chatbot using HTML frontend, FastAPI ba
 9. 首頁可直接操作聊天功能
 
 ## 介面需求
+
 - 左側：session 歷史列表
 - 右側：聊天視窗
 - 可建立新對話
@@ -41,6 +44,7 @@ description: Implement the full-stack AI chatbot using HTML frontend, FastAPI ba
 - 有簡單但整潔的樣式
 
 ## 後端建議 API
+
 - `GET /`
 - `GET /api/sessions`
 - `POST /api/sessions`
@@ -53,6 +57,7 @@ description: Implement the full-stack AI chatbot using HTML frontend, FastAPI ba
 - `POST /api/preferences`
 
 ## 實作原則
+
 - 程式需可執行
 - 避免過度複雜
 - 優先完成作業需求
@@ -63,7 +68,9 @@ description: Implement the full-stack AI chatbot using HTML frontend, FastAPI ba
 - 程式中不可硬編碼 API key
 
 ## 產出要求
+
 請直接建立或修改至少以下檔案：
+
 - `app.py`
 - `templates/index.html`
 - `static/app.js`

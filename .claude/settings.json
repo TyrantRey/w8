@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(try { Invoke-WebRequest -Uri http://127.0.0.1:8000/ -UseBasicParsing } catch { $_.Exception.Response.StatusCode; $_.ErrorDetails.Message })",
+      "PowerShell(Invoke-WebRequest -Uri http://127.0.0.1:8001/ -UseBasicParsing)",
+      "PowerShell($r = Invoke-WebRequest -Uri http://127.0.0.1:8001/ -UseBasicParsing; $r.StatusCode)"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls *)",
+      "Bash(uvicorn app:app --reload)",
+      "PowerShell(Invoke-WebRequest -Uri http://127.0.0.1:8000/ -UseBasicParsing)"
+    ]
+  }
+}

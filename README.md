@@ -14,3 +14,7 @@
 
 > 主要問題是環境設定與整合測試，例如 API key、套件版本、外部 API 回應格式，以及前後端欄位名稱是否一致。  
 > AI 可以快速產生程式骨架，但在實際執行時，仍需要我手動修正錯誤、確認資料流與補上細節。
+
+## 系統截圖
+![image](./screenshots/image.png)
+![image](./screenshots/image1.png)

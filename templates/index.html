@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>Chat Sessions</h2>
+          <button id="newSessionBtn">+ New Chat</button>
+        </div>
+        <div id="sessionList" class="session-list"></div>
+
+        <div class="prefs">
+          <h3>Preferences</h3>
+          <label>Name</label>
+          <input id="prefName" type="text" placeholder="e.g. Allen" />
+
+          <label>Language</label>
+          <input id="prefLanguage" type="text" placeholder="e.g. zh-TW" />
+
+          <label>Tone</label>
+          <input id="prefTone" type="text" placeholder="e.g. concise" />
+
+          <button id="savePrefsBtn">Save Preferences</button>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <div class="chat-header">
+          <h1>AI Chatbot</h1>
+          <div class="tool-hint">
+            Tool demo: type <code>time: Asia/Taipei</code>
+          </div>
+        </div>
+
+        <div id="chatMessages" class="chat-messages"></div>
+
+        <div class="upload-row">
+          <input type="file" id="fileInput" />
+          <button id="uploadBtn">Upload</button>
+          <span id="uploadStatus"></span>
+        </div>
+
+        <div class="input-row">
+          <textarea
+            id="messageInput"
+            placeholder="Type your message..."
+          ></textarea>
+        </div>
+
+        <div class="action-row">
+          <button id="sendBtn">Send</button>
+          <button id="stopBtn" class="secondary">Stop</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

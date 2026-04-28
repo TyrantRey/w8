@@ -1,39 +1,46 @@
-# PRD - AI Chatbot
+---
+name: prd
+description: Generate a concise Product Requirements Document for the AI chatbot project
+---
 
-## Product Overview
+# /prd
 
-一個以 FastAPI + HTML + SQLite 建構的 AI 聊天機器人，支援多聊天室、歷史紀錄、檔案上傳、使用者偏好記憶與外部工具整合。
+你的任務是為目前專案產出 `docs/PRD.md`。
 
-## Goals
+## 專案背景
+這是一個課堂作業專案，需要完成一個具備前後端的 AI 聊天機器人，並使用 Skill 引導開發。
 
-- 建立可操作的聊天機器人
-- 支援多 session 對話管理
-- 儲存對話與偏好資料
-- 展示 AI 輔助開發流程與 skill 設計能力
+## 必須包含的產品需求
+1. 使用 HTML 前端
+2. 使用 FastAPI 後端
+3. 使用 SQLite 儲存資料
+4. 支援多聊天室（session）
+5. 訊息需包含：
+   - role
+   - content
+   - timestamp
+6. 可查看與切換歷史對話
+7. 支援上傳圖片或文件
+8. 支援重新生成回答
+9. 支援中止回應
+10. 支援跨對話的使用者偏好記憶
+11. 至少整合一個外部工具/API
+12. UI 需可用、可實際操作
 
-## Non-Goals
+## 文件格式要求
+請產出一份結構清楚、精簡但完整的 PRD，至少包含：
+- Product Overview
+- Goals
+- Non-Goals
+- Target Users
+- Core Features
+- User Stories
+- Functional Requirements
+- Non-Functional Requirements
+- Success Criteria
+- Risks / Constraints
 
-- 不追求正式商用等級部署
-- 不實作複雜權限系統
-- 不做高併發架構
-
-## Target Users
-
-- 課程助教與教師
-- 開發者/學生
-
-## Core Features
-
-- 多聊天室
-- 歷史訊息
-- 檔案上傳
-- regenerate / stop
-- preference memory
-- tool integration
-
-## User Stories
-
-- 作為使用者，我可以建立新聊天並保留歷史內容
-- 作為使用者，我可以上傳文件輔助提問
-- 作為使用者，我可以重新生成回答
-- 作為使用者，我希望 AI 記住我的偏好
+## 輸出要求
+- 直接建立或覆蓋 `docs/PRD.md`
+- 內容使用 Markdown
+- 不要輸出多餘說明
